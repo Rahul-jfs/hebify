@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+ 
+      <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top bg-light"
+      aria-label="Main navigation">
+      <div class="container-fluid mx-5">
+        <div>
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/Logo.png"
+              alt=""
+              width="120"
+              height="24"
+              class="img-fluid"
+            />
+          </a>
+          <button
+            class="navbar-toggler justify-content-between"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+          <div class="d-lg-flex">
+            <form class="d-flex">
+              <div class="form-group has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control" placeholder="Search" />
+              </div>
+            </form>
+            <div class="dropdown">
+              <button
+                type="button"
+                class="btn dropdown-toggle"
+                data-bs-toggle="dropdown"
+              >
+                Topic
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Topic 1</a></li>
+                <li><a class="dropdown-item" href="#">Topic 2</a></li>
+                <li><a class="dropdown-item" href="#">Topic 3</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="dropdown">
+              <button type="button" class="btn" data-bs-toggle="dropdown">
+                Latest Topics <span class="navbar-toggler-icon"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Topic 1</a></li>
+                <li><a class="dropdown-item" href="#">Topic 2</a></li>
+                <li><a class="dropdown-item" href="#">Topic 3</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <button type="button" class="btn position-relative mx-3">
+              <i class="fa-regular fa-bell"></i>
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >10+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>  
+            <button class="btn btn-primary rounded-circle" id="user" onclick="window.location.href = 'signup.html';">A</button>
+            <a href="#loginpage" onclick="window.location.href = 'signup.html';"
+              >assfms<i class="fa-solid fa-angle-down"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>  
+      <div class="container position-relative my-5 p-3">
+        <div class="row position-relative fixed sticky">
+          <div class="col-sm-5 p-3">Topic</div>
+          <div class="col-sm-2 p-3">Category</div>
+          <div class="col-sm-2 p-3">Users</div>
+          <div class="col-sm-1 p-3">Replies</div>
+          <div class="col-sm-1 p-3">Views</div>
+          <div class="col-sm-1 p-3">Activity</div>
+        </div>
+        <div class="row row-worn">
+          <div class="col-sm-5 p-3"><h6>Welcome Enabler! Please read this before posting!</h6> 
+            <p class="fs-6"> 
+          Before you make a new topic or a post, please read community guidelines. We aim to be the friendliest community for online mental health support.</p> </div>
+          <div class="col-sm-2 p-3 my-auto"> </div>
+          <div class="col-sm-2 p-3 my-auto"> <button class="btn rounded-circle green">B</button> <button class="btn  rounded-circle brown">K</button> <button class="btn  rounded-circle lt-orange">O</button></div>
+          <div class="col-sm-1 p-3 my-auto">66</div>
+          <div class="col-sm-1 p-3 my-auto">15.1k</div>
+          <div class="col-sm-1 p-3 my-auto">11d</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 p-3">Current news and discussion</div>
+          <div class="col-sm-2 p-3"><span class="dot green"></span> Mental Health</div>
+          <div class="col-sm-2 p-3"><button class="btn pink rounded-circle">A</button> <button class="btn gray rounded-circle">G</button> <button class="btn green rounded-circle">P</button></div>
+          <div class="col-sm-1 p-3">31</div>
+          <div class="col-sm-1 p-3">41.5k</div>
+          <div class="col-sm-1 p-3">13m</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 p-3">Non-Urgent Emotional Help <br> <button type="button" class="btn btn-primary btn-sm mx-2 my-1">mentalhealth</button> <button type="button" class="btn btn-danger btn-sm">Enabler</button></div>
+          <div class="col-sm-2 p-3"><span class="dot row-worn"></span> Video</div>
+          <div class="col-sm-2 p-3"><button class="btn btn-primary rounded-circle">L</button> <button class="btn btn-primary rounded-circle">T</button></div>
+          <div class="col-sm-1 p-3">252</div>
+          <div class="col-sm-1 p-3">396</div>
+          <div class="col-sm-1 p-3">30m</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 p-3">Other ways of getting help</div>
+          <div class="col-sm-2 p-3"><span class="dot brown"></span> Mind</div>
+          <div class="col-sm-2 p-3"><button class="btn btn-primary rounded-circle">E</button> <button class="btn btn-primary rounded-circle">I</button> <button class="btn btn-primary rounded-circle">R</button></div>
+          <div class="col-sm-1 p-3">207</div>
+          <div class="col-sm-1 p-3">7.5k</div>
+          <div class="col-sm-1 p-3">41m</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 p-3">How to help a person who self-harms!</div>
+          <div class="col-sm-2 p-3"><span class="dot lt-orange"></span> Q&A</div>
+          <div class="col-sm-2 p-3"><button class="btn btn-primary rounded-circle">F</button></div>
+          <div class="col-sm-1 p-3">2.3k</div>
+          <div class="col-sm-1 p-3">2.0k</div>
+          <div class="col-sm-1 p-3">1h</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 p-3">Feeling Overwhelmed <br><button type="button" class="btn pink btn-sm mx-2 my-1">Hope</button> <button type="button" class="btn btn-success btn-sm">Help</button></div>
+          <div class="col-sm-2 p-3"><span class="dot pink"></span> Hope</div>
+          <div class="col-sm-2 p-3"><button class="btn btn-primary rounded-circle">C</button> <button class="btn btn-primary rounded-circle">U</button> <button class="btn btn-primary rounded-circle">I</button></div>
+          <div class="col-sm-1 p-3">441</div>
+          <div class="col-sm-1 p-3">3.1k</div>  
+          <div class="col-sm-1 p-3">6h</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 p-3">Should I Tell <br><button type="button" class="btn btn-primary btn-sm mx-2 my-1">Never Stop</button> <button type="button" class="btn btn-success btn-sm">Doubt</button></div>
+          <div class="col-sm-2 p-3"><span class="dot gray"></span> Hope</div>
+          <div class="col-sm-2 p-3"><button class="btn btn-primary rounded-circle">K</button> <button class="btn btn-primary rounded-circle">N</button> <button class="btn btn-primary rounded-circle">Q</button></div>
+          <div class="col-sm-1 p-3">1.3k</div>
+          <div class="col-sm-1 p-3">6.0k</div>  
+          <div class="col-sm-1 p-3">7h</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 p-3"><i class="fa-solid fa-lock"></i> If you need someone to talk urgently and in confidence</div>
+          <div class="col-sm-2 p-3"><span class="dot dk-green"></span> Emotional Help</div>
+          <div class="col-sm-2 p-3"><button class="btn green rounded-circle">C</button> <button class="btn btn-primary rounded-circle">W</button> <button class="btn cream rounded-circle">Y</button></div>
+          <div class="col-sm-1 p-3">5.7k</div>
+          <div class="col-sm-1 p-3">33.6k</div>
+          <div class="col-sm-1 p-3">13h</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 p-3">Post the weirdest thing you own here</div>
+          <div class="col-sm-2 p-3"><span class="dot dk-brown"></span> Education</div>
+          <div class="col-sm-2 p-3"><button class="btn btn-primary rounded-circle">D</button> <button class="btn btn-primary rounded-circle">M</button> <button class="btn btn-primary rounded-circle">R</button></div>
+          <div class="col-sm-1 p-3">236</div>
+          <div class="col-sm-1 p-3">2.3k</div>
+          <div class="col-sm-1 p-3">10h</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 p-3">Show me your awesome photography <br><button type="button" class="btn saffron btn-sm">Photography</button></div>
+          <div class="col-sm-2 p-3"><span class="dot blue"></span> Science</div>
+          <div class="col-sm-2 p-3"><button class="btn btn-primary rounded-circle">E</button> <button class="btn btn-primary rounded-circle">R</button> <button class="btn btn-primary rounded-circle">T</button></div>
+          <div class="col-sm-1 p-3">3</div>
+          <div class="col-sm-1 p-3">519</div>
+          <div class="col-sm-1 p-3">2D</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 p-3">Prevention Strategies </div>
+          <div class="col-sm-2 p-3"><span class="dot dk-grey"></span> Random</div>
+          <div class="col-sm-2 p-3"><button class="btn btn-primary rounded-circle">H</button> <button class="btn btn-primary rounded-circle">M</button> <button class="btn btn-primary rounded-circle">Y</button></div>
+          <div class="col-sm-1 p-3">60</div>
+          <div class="col-sm-1 p-3">891</div>
+          <div class="col-sm-1 p-3">1h</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 p-3">Live Music </div>
+          <div class="col-sm-2 p-3"><span class="dot saffron"></span> Music</div>
+          <div class="col-sm-2 p-3"><button class="btn btn-primary rounded-circle">L</button> <button class="btn btn-primary rounded-circle">A</button></div>
+          <div class="col-sm-1 p-3">587</div>
+          <div class="col-sm-1 p-3">3.8k</div>
+          <div class="col-sm-1 p-3">3D</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 p-3">Racing thought <br> <button type="button" class="btn btn-success btn-sm mx-2 my-1">Climbing</button><button type="button" class="btn cream btn-sm mx-2 my-1">Funny</button><button type="button" class="btn pink btn-sm">Adventure</button></div>
+          <div class="col-sm-2 p-3"><span class="dot blue"></span> Entertainment</div>
+          <div class="col-sm-2 p-3"><button class="btn btn-primary rounded-circle">I</button> <button class="btn btn-primary rounded-circle">O</button> <button class="btn btn-primary rounded-circle">S</button></div>
+          <div class="col-sm-1 p-3">628</div>
+          <div class="col-sm-1 p-3">997</div>
+          <div class="col-sm-1 p-3">1h</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 p-3">Post your Artwork! </div>
+          <div class="col-sm-2 p-3"><span class="dot pink"></span> Art</div>
+          <div class="col-sm-2 p-3"><button class="btn btn-primary rounded-circle">S</button> <button class="btn btn-primary rounded-circle">G</button></div>
+          <div class="col-sm-1 p-3">147</div>
+          <div class="col-sm-1 p-3">397</div>
+          <div class="col-sm-1 p-3">3h</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 p-3">How to feel normal </div>
+          <div class="col-sm-2 p-3"><span class="dot dk-green"></span> Upset</div>
+          <div class="col-sm-2 p-3"><button class="btn btn-primary rounded-circle">K</button> <button class="btn btn-primary rounded-circle">L</button><button class="btn btn-primary rounded-circle">R</button></div>
+          <div class="col-sm-1 p-3">274</div>
+          <div class="col-sm-1 p-3">2.9k</div>
+          <div class="col-sm-1 p-3">1D</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 p-3">Tell me about your recent dream</div>
+          <div class="col-sm-2 p-3"><span class="dot blue1"></span> Dreams</div>
+          <div class="col-sm-2 p-3"><button class="btn btn-primary rounded-circle">N</button> <button class="btn btn-primary rounded-circle">H</button> </div>
+          <div class="col-sm-1 p-3">0</div>
+          <div class="col-sm-1 p-3">42</div>
+          <div class="col-sm-1 p-3">1D</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 p-3">A thread in which you can tell users to go to sleep <br> <button type="button" class="btn  btn-sm mx-2 my-1 cream ">Dreams</button><button type="button" class="btn  btn-sm mx-2 my-1 yellow">Life</button><button type="button" class="btn  btn-sm mx-2 my-1 blue1">Reason</button><button type="button" class="btn btn-success btn-sm">Social</button></div>
+          <div class="col-sm-2 p-3"><span class="dot cream"></span> Social</div>
+          <div class="col-sm-2 p-3"><button class="btn btn-primary rounded-circle">J</button> <button class="btn btn-primary rounded-circle">D</button> <button class="btn btn-primary rounded-circle">Q</button></div>
+          <div class="col-sm-1 p-3">129</div>
+          <div class="col-sm-1 p-3">752</div>
+          <div class="col-sm-1 p-3">19h</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 p-3">What's everyone listening?</div>
+          <div class="col-sm-2 p-3"><span class="dot saffron"></span> Random</div>
+          <div class="col-sm-2 p-3"><button class="btn btn-primary rounded-circle">B</button> <button class="btn btn-primary rounded-circle">M</button><button class="btn btn-primary rounded-circle">Z</button></div>
+          <div class="col-sm-1 p-3">305</div>
+          <div class="col-sm-1 p-3">2.1k</div>
+          <div class="col-sm-1 p-3">6h</div>
+        </div>
+    </div>
+    <div class="container d-flex  align-items-center ">
+      <a class="navbar-brand" href="#">
+        <img
+          src="assets/Logo.png"
+          alt=""
+          width="120"
+          height="24"
+          class="img-fluid"
+        />
+      </a>
+      <div class="mx-3">
+        <a href="#" class="mx-2">Support</a>
+        <a href="#" class="mx-2">About</a>
+        <a href="#" class="mx-2">Contact Us</a>
+        <a href="#" class="mx-2">The Team</a>
+      </div>
+    </div>
+    <div class="container my-3 d-flex justify-content-between">
+      <div class="mx-3">
+        <a href="#" class="mx-2">@2023 Emotional First Aid Academy</a>
+        <a href="#" class="mx-2">Terms</a>
+        <a href="#" class="mx-2">Privacy</a>
+        <a href="#" class="mx-2">Send Feedback</a>
+      </div>
+      <div class="mx-5">
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+        <a href="#"><i class="fa-solid fa-cloud"></i></a>
+      </div>
+    </div>
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>

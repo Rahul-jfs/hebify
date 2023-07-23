@@ -1,0 +1,91 @@
+a{
+  text-decoration: none;
+  color: #bbb;
+}
+
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.row-worn{
+  background-color: rgba(173,9,34,0.4); 
+  color: black;
+}
+.green{
+  background-color: rgba(33,133,130,255);
+}
+.brown{
+  background-color: rgba(87,65,86,255);
+}
+
+.lt-orange{
+  background-color: rgba(206,140,138,255);
+}
+.pink{
+  background-color: rgba(217,17,90,255);
+}
+.gray{
+  background-color: rgba(201,195,205,255);
+}
+.dk-green{
+  background-color: (103,148,55,255);
+}
+.yellow{
+  background-color: rgba(249,187,100,255);
+}
+
+.dk-brown{
+  background-color: rgba(162,95,73,255);
+}
+
+.blue{
+  background-color: rgba(127,126,255,255);
+}
+.dk-grey{
+  background-color: rgba(114,128,156,255);
+}
+
+.dk-green2{
+  background-color: rgba(58,59,24,255);
+}
+.saffron{
+  background-color: rgba(244,97,35,255);
+}
+
+.lt-green{
+  background-color: rgba(0,190,156,255);
+}
+
+.cream{
+  background-color: rgba(212,173,204,255);
+}
+
+.blue1{
+  background-color: rgba(59,151,209,255);
+}
+
+.secondary-nav{
+  position: sticky;
+  
+}
+
